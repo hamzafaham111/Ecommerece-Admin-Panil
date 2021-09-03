@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-  form:{width:"40vw",margin:"auto",marginTop:"5vh"},
+  form:{width:"50vw",margin:"auto",marginTop:"5vh",padding:"15px"},
   inputField:{  fontSize:"20px"},
   input:{
       width:"100%",

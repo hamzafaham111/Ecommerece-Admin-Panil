@@ -14,11 +14,12 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import GroupIcon from '@material-ui/icons/Group';
 import CategoryIcon from '@material-ui/icons/Category';
+import PersonIcon from '@material-ui/icons/Person';
 
 export const SidebarData = [
   {
     title: 'Dashboard',
-    path: '/',
+    path: '/dashboard',
     icon: <AiIcons.AiFillDashboard />,
     iconClosed: < MdKeyboardArrowLeft/>,
     iconOpened: <MdKeyboardArrowDown />,
@@ -61,5 +62,13 @@ export const SidebarData = [
     title: 'Messages',
     path: '/messeges',
     icon: <FaIcons.FaEnvelopeOpenText />,
+  },
+  {
+    title: 'Logout',
+    path: '/',
+    icon: <PersonIcon/>,
+    onPress: () =>{
+      window.location.assign("http://localhost:3000/");
+    }
   },
 ];

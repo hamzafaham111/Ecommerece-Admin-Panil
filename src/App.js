@@ -51,8 +51,9 @@ function App() {
       <ThemeProvider theme={theme} >
     <div className="App">
        <Router>
-           <Route exact path={"/"} component={Master}/>
-           <Route exact path="/login">
+       <Topbar />
+           <Route exact path={"/dashboard"} component={Master}/>
+           <Route exact path="/">
                <Login/>
            </Route>
        </Router>

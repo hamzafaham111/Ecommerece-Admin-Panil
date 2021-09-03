@@ -33,8 +33,8 @@ const ProductList = () => {
             <Grid item xs={2}><b>{val.Name}</b></Grid>
             <Grid item xs={2}>{val.Quantity}</Grid>
             <Grid item xs={2}>{val.Unit_Price}</Grid>
-            <Grid item xs={2}><Link to="/edit-product"><Edit style={{color:"white", cursor:"pointer", background:"green", width:"35px", height:"35px", padding:"4px", borderRadius:"20px",          boxShadow: "0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%)"}}/></Link> </Grid>
-            <Grid item xs={2}><Delete style={{color:"white", cursor:"pointer", background:"#5E4FBF", width:"35px", height:"35px", padding:"4px", borderRadius:"20px",boxShadow: "0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%)"}}/></Grid>
+            <Grid item xs={2}><Link to="/edit-product"><Edit className={classes.greenIcon}/></Link> </Grid>
+            <Grid item xs={2}><Delete className={classes.blueIcon}/></Grid>
           </Grid>
            )
          })

@@ -12,7 +12,7 @@ const SubMenu = ({ item }) => {
     <>
       <div className="sidebarMenu">
         <div className="sidebarList">
-          <Link to={item.path} onClick={item.subNav && showSubnav} className="link">
+          <Link to={item?.onPress?null:item.path} onClick={item?.onPress?item.onPress: item.subNav && showSubnav} className="link">
             <div className={"SidebarListFlex"}>
             <div className="sidebarListItem active">
              <div className={"sidebarListIcon"}> {item.icon}</div>
