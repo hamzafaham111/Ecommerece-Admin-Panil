@@ -1,0 +1,76 @@
+.sidebar {
+  flex: 1;
+  height: calc(100vh - 20px);
+  background-color: rgb(33,37,41);
+  position: sticky;
+  top: 50px;
+}
+.sidebarWrapper {
+  color: #909294;
+}
+.submenu{
+ font-size: 24px;
+  margin:0 6px;
+  color: #b4b7b4;
+}
+.SidebarListFlex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SidebarListFlex:hover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4b4c4b;
+  color: White!important;
+  transition: .1s;
+}
+
+.sidebarListItem {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.sidebarListIcon{
+  font-size: 20px;
+  margin: 0 7px;
+  color: #959695;
+}.SidebarListFlex:hover .sidebarListIcon{
+  color: white;
+}
+.SidebarListFlex:hover .submenu{
+  color: #ffffff;
+}
+.sidebarListItems {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #959695;
+}
+.sidebarListIcons{
+  font-size: 16px;
+  margin-left: 25px;
+  color: #959695;
+}.Link-Sidebar:hover .sidebarListIcons{
+  background-color: #4b4c4b;
+   color: white;
+ }
+.Link-Sidebar:hover .sidebarListItems{
+   color: white;
+  background-color: #4b4c4b;
+
+}
+.Link-Sidebar:hover .submenu{
+  color: #ffffff;
+}
+
+.Link-Sidebar:active{
+  color: red;
+  background-color: yellow;
+}
